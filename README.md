@@ -1,33 +1,45 @@
-# Very short description of the package
+# Laravel-lang
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/fc9/localization.svg?style=flat-square)](https://packagist.org/packages/fc9/localization)
-[![Build Status](https://img.shields.io/travis/fc9/localization/master.svg?style=flat-square)](https://travis-ci.org/fc9/localization)
-[![Quality Score](https://img.shields.io/scrutinizer/g/fc9/localization.svg?style=flat-square)](https://scrutinizer-ci.com/g/fc9/localization)
-[![Total Downloads](https://img.shields.io/packagist/dt/fc9/localization.svg?style=flat-square)](https://packagist.org/packages/fc9/localization)
+In this repository, you can find the lang files for the framework PHP, [Laravel 4&5](http://www.laravel.com).
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+## Install
 
-## Installation
+#### Via Composer
+* For Laravel 5.8-6.0 : run `composer require caouecs/laravel-lang:~4.0` in your project folder
+* For Laravel 5.1-5.7 : run `composer require caouecs/laravel-lang:~3.0` in your project folder
+* For Laravel 5 : run `composer require caouecs/laravel-lang:~2.0` in your project folder
+* For Laravel 4 : run `composer require caouecs/laravel-lang:~1.0` in your project folder
+* Files of languages are in "vendor/caouecs/laravel-lang" directory
+* Copy the folders of languages that you want, in the *resources/lang* folder of your Laravel application (*app/lang* in Laravel 4).
 
-You can install the package via composer:
+#### Via GitHub
 
-```bash
-composer require fc9/lang
+* Clone the [GitHub repository](https://github.com/caouecs/laravel-lang/) : *git clone https://github.com/caouecs/Laravel-lang.git*
+* Or download the [zip file](https://github.com/caouecs/laravel-lang/archive/master.zip)
+* Choose the branch:
+    * `laravel4` for Laravel 4 project
+    * `master` for Laravel 5, 6 projects
+* Copy the folders of languages that you want, in *resources/lang* folder of your Laravel application (*app/lang* in Laravel 4).
+
+#### Via SVN
+
+Run this in your project directory:
+
+```sh
+# Laravel 5:
+svn export https://github.com/caouecs/Laravel-lang/trunk/src/[language-code] resources/lang/[language-code]
+
+# Laravel 4:
+svn export https://github.com/caouecs/Laravel-lang/branches/laravel4/[language-code] app/lang/[language-code]
 ```
 
-## Usage
+Replace `[language-code]` by any of the languages listed [here](src).
 
-``` php
-// Usage description here
-```
+## Usage [Laravel only]
 
-### Testing
+In the file *config/app.php*, change the value of *locale* by the short name of your language (*app/config/app.php* in Laravel 4).
 
-``` bash
-composer test
-```
-
-### Changelog
+## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
