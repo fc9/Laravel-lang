@@ -5,7 +5,7 @@
         "fc9",
         "lang"
     ],
-    "homepage": "https://github.com/fc9/lang",
+    "homepage": "https://github.com/fc9/base-lang",
     "license": "MIT",
     "type": "library",
     "authors": [
