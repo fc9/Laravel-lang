@@ -1,0 +1,54 @@
+{
+    "name": "fc9/lang",
+    "description": "Making it easier to add support the multiple languages.",
+    "keywords": [
+        "fc9",
+        "lang"
+    ],
+    "homepage": "https://github.com/fc9/lang",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Fabio Cabral",
+            "email": "fabiocabralsantos@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fc9\\Lang\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fc9\\Lang\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fc9\\Lang\\Providers\\LocalizationServiceProvider"
+            ],
+            "aliases": {
+                "Lang9": "Fc9\\Lang\\LangFacade"
+            }
+        }
+    }
+}
