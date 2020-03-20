@@ -43,7 +43,7 @@ class LangServiceProvider extends ServiceProvider
      */
     public function registerTranslations()
     {
-        $langPath = resource_path('lang/packages/lang');
+        $langPath = resource_path('lang/vendor/lang');
 
         if (is_dir($langPath)) {
             $this->loadTranslationsFrom($langPath, 'lang');

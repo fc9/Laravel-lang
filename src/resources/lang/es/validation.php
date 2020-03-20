@@ -92,7 +92,6 @@ return [
     'not_in'               => ':attribute es inválido.',
     'not_regex'            => 'El formato del campo :attribute no es válido.',
     'numeric'              => ':attribute debe ser numérico.',
-    'password'             => 'La contraseña es incorrecta.',
     'present'              => 'El campo :attribute debe estar presente.',
     'regex'                => 'El formato de :attribute es inválido.',
     'required'             => 'El campo :attribute es obligatorio.',
@@ -129,11 +128,8 @@ return [
     */
 
     'custom' => [
-        'password' => [
-            'min' => 'La :attribute debe contener más de :min caracteres',
-        ],
-        'email' => [
-            'unique' => 'El :attribute ya ha sido registrado.',
+        'attribute-name' => [
+            'rule-name' => 'custom-message',
         ],
     ],
 
@@ -163,18 +159,21 @@ return [
         'first_name'            => 'nombre',
         'gender'                => 'género',
         'hour'                  => 'hora',
+        'indicator'             => 'indicador',
         'last_name'             => 'apellido',
         'message'               => 'mensaje',
         'minute'                => 'minuto',
         'mobile'                => 'móvil',
         'month'                 => 'mes',
         'name'                  => 'nombre',
-        'password'              => 'contraseña',
         'password_confirmation' => 'confirmación de la contraseña',
+        'password'              => 'contraseña',
         'phone'                 => 'teléfono',
         'price'                 => 'precio',
+        'remember'              => 'recuérdame',
         'second'                => 'segundo',
         'sex'                   => 'sexo',
+        'sponsor'               => 'patrocinador',
         'subject'               => 'asunto',
         'terms'                 => 'términos',
         'time'                  => 'hora',

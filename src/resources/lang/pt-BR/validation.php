@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines
@@ -131,11 +130,7 @@ return [
 
     'custom' => [
         'attribute-name' => [
-            'unique' => ':attribute indisponível.',
-            'username:unique' => ':attribute já está em uso.',
-            'username:regex' => 'O :attribute é inválido.',
-            'indicator:regex' => 'O :attribute é inválido.',
-            'qualified' => 'O :attribute não encontrado ou não qualificado.',
+            'rule-name' => 'custom-message',
         ],
     ],
 
@@ -163,7 +158,7 @@ return [
         'first_name'            => 'primeiro nome',
         'gender'                => 'gênero',
         'hour'                  => 'hora',
-        'indicator'             => 'patrocinador',
+        'indicator'             => 'indicador',
         'last_name'             => 'sobrenome',
         'message'               => 'mensagem',
         'minute'                => 'minuto',
@@ -175,15 +170,15 @@ return [
         'phone'                 => 'telefone',
         'second'                => 'segundo',
         'sex'                   => 'sexo',
+        'sponsor'               => 'patrocinador',
         'state'                 => 'estado',
         'subject'               => 'assunto',
         'text'                  => 'texto',
         'time'                  => 'hora',
         'title'                 => 'título',
-        'username'              => 'nome de usuário',
+        'username'              => 'usuário',
         'year'                  => 'ano',
-        'email'                 => 'email',
+        'email'                 => 'e-mail',
         'remember'              => 'lembrar-me',
     ],
-
 ];

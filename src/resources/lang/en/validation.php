@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines
@@ -93,7 +92,6 @@ return [
     'not_in' => 'The selected :attribute is invalid.',
     'not_regex' => 'The :attribute format is invalid.',
     'numeric' => 'The :attribute must be a number.',
-    'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
     'required' => 'The :attribute field is required.',
@@ -131,11 +129,7 @@ return [
 
     'custom' => [
         'attribute-name' => [
-            'unique' => 'The :attribute unavailable.',
-            'username:unique' => 'The :attribute unavailable.',
-            'username:regex' => 'The :attribute is not valid.',
-            'indicator:regex' => 'The :attribute is not valid.',
-            'qualified' => 'The :attribute not found or unqualified.',
+            'rule-name' => 'custom-message',
         ],
     ],
 
@@ -153,37 +147,38 @@ return [
     'attributes' => [
         'address'               => 'address',
         'age'                   => 'age',
-        'body'                  => 'body',
+        'body'                  => 'content',
         'city'                  => 'city',
+        'content'               => 'content',
         'country'               => 'country',
         'date'                  => 'date',
         'day'                   => 'day',
         'description'           => 'description',
-        'excerpt'               => 'excerpt',
+        'email'                 => 'email',
+        'excerpt'               => 'summary',
         'first_name'            => 'first name',
         'gender'                => 'gender',
         'hour'                  => 'hour',
-        'indicator'             => 'sponsor',
+        'indicator'             => 'indicator',
         'last_name'             => 'last name',
         'message'               => 'message',
         'minute'                => 'minute',
         'mobile'                => 'mobile',
         'month'                 => 'month',
         'name'                  => 'name',
-        'password_confirmation' => 'password confirm',
+        'password_confirmation' => 'password confirmation',
         'password'              => 'password',
         'phone'                 => 'phone',
+        'remember'              => 'remember',
         'second'                => 'second',
         'sex'                   => 'sex',
+        'sponsor'               => 'sponsor',
         'state'                 => 'state',
         'subject'               => 'subject',
         'text'                  => 'text',
         'time'                  => 'time',
         'title'                 => 'title',
-        'username'              => 'username',
+        'username'              => 'user',
         'year'                  => 'year',
-        'email'                 => 'email',
-        'remember'              => 'remember',
     ],
-
 ];
