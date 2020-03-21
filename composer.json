@@ -44,7 +44,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Fc9\\Lang\\Providers\\LocalizationServiceProvider"
+                "Fc9\\Lang\\Providers\\LangServiceProvider"
             ],
             "aliases": {
                 "Lang9": "Fc9\\Lang\\LangFacade"
